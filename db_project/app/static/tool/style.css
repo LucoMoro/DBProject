@@ -218,7 +218,7 @@ nav .fa {
 
 .list-col{
     flex-basis: 32%;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -259,4 +259,54 @@ nav .fa {
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+}
+
+/* ---- Discover more ---- */
+
+.discover{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(var(--shading_grey),var(--shading_grey)),url(lotr_walk.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;    
+}
+
+.discover h1{
+    color: var(--white);
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .discover h1{
+        font-size: 24px;
+    }
+}
+
+
+/* ---- Footer ---- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+   color: var(--red);
+   margin: 0 13px;
+   cursor: pointer;
+}
+
+.footer p .fa{
+    color: var(--red);
 }
