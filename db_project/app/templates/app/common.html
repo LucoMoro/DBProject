@@ -16,12 +16,13 @@
     
     <!-- Style.css -->
     <link rel="stylesheet" href="/static/tool/style.css?{% now 'U' %}" />
-    <!-- Font Awesome-->
+    <!-- Font Awesome -->
     <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DB Project</title>
 </head>
 
 <body>
+    <!-- Header -->
     <section class="header">
         <nav>
             <a href="{% url 'home' %}"><img src="../../static/tool/logo.png"></a>
@@ -29,7 +30,7 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="{% url 'aboutUs' %}">ABOUT</a></li>
+                    <li><a href=" {% url 'aboutUs' %} ">ABOUT</a></li>
                     <li><a href="">SEARCH</a></li>
                     <li><a href="">FILMS</a></li>
                     <li><a href="">LOGIN</a></li>
@@ -45,65 +46,8 @@
         </div>
     </section>
 
-    <!-- Devs -->
-    <section class="dev">
-        <h1>Developers</h1>
-        <p>Developers that worked at the project</p>
-
-        <div class="row">
-            <div class="dev-col">
-                <h3>Titolo 1</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry.               
-                </p>
-            </div>
-            <div class="dev-col">
-                <h3>Titolo 2</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry.         
-                </p>
-            </div>
-            <div class="dev-col">
-                <h3>Titolo 3</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing 
-                    and typesetting industry.          
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- List of films -->
-
-    <section class="list">
-        <h1>Top films</h1>
-        <p>TODO: add something</p>  
-        <div class="row">
-            <div class="list-col">
-                <img src="../../static/tool/alien3.jpg">
-                <div class="layer">
-                    <h3>Alien 3</h3>
-                </div>
-            </div>
-            <div class="list-col">
-                <img src="../../static/tool/alien3.jpg">
-                <div class="layer">
-                    <h3>Alien 3</h3>
-                </div>
-            </div>
-            <div class="list-col">
-                <img src="../../static/tool/alien3.jpg">
-                <div class="layer">
-                    <h3>Alien 3</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Discover more -->
-    <section class="discover">
-        <h1>TODO: Add something...<br> Discover more</h1>
-        <a href="" class="hero-btn">DISCOVER MORE</a>
-    </section>
+    {% block content %}
+    {% endblock %}
 
     <!-- Footer -->
     <section class="footer">
