@@ -104,6 +104,7 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .hero-btn:hover{

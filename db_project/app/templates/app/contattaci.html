@@ -14,6 +14,28 @@
 </head>
 
 <body>
+    <section class="header">
+        <nav>
+            <a href="{% url 'home'%}"><img src="../../static/tool/logo.png"></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SEARCH</a></li>
+                    <li><a href="">FILMS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>The film's House</h1>
+            <p>TODO: Add subtest</p>
+            <a href="" class="hero-btn">start now</a>
+        </div>
+    </section>
+
     <!-- Image and text -->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
