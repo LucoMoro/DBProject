@@ -20,6 +20,8 @@ body{
     padding: 0;    
 }
 
+/* ---- HOME PAGE ---- */
+/* ---- Header ---- */
 .header{
     min-height: 100vh;
     width: 100%;
@@ -310,4 +312,55 @@ nav .fa {
 
 .footer p .fa{
     color: var(--red);
+}
+
+/* ---- ABOUT US PAGE ---- */
+/* ---- header ---- */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(var(--shading_grey),var(--shading_grey)),url(avatar.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white);
+}
+
+.subheader h1{
+    margin-top: 100px;
+}
+
+/* ---- cards ---- */
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 60%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid var(--red);
+    background: transparent;
+    color: var(--red);
+}
+
+.red-btn:hover{
+    color: var(--white);
 }
